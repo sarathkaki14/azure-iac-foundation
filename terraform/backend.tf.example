@@ -1,0 +1,14 @@
+# -----------------------------------------------------------------------------
+# Remote state backend (Step 6).
+# Copy this file to backend.tf, then run:
+#   terraform init -migrate-state -backend-config=backend.hcl
+#
+# Settings that differ per person (RG / account name) live in backend.hcl
+# so they are not hard-coded here ("partial configuration").
+# -----------------------------------------------------------------------------
+terraform {
+  backend "azurerm" {
+    container_name = "tfstate"
+    key            = "module4/foundation-dev.tfstate"
+  }
+}

@@ -1,0 +1,25 @@
+# Terraform working files - never commit these
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+.terraform.tfstate.lock.info
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Real backend settings (keep the .example versions in Git)
+terraform/backend.tf
+terraform/backend.hcl
+
+# Bicep build output
+bicep/**/*.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,6 @@
+# Copy to backend.hcl and fill in your Module 3 storage account details.
+# Find the resource group with:
+#   az storage account show -n sksawebdemo --query resourceGroup -o tsv
+resource_group_name  = "<module3-resource-group>"
+storage_account_name = "sksawebdemo"
+use_azuread_auth     = true
