@@ -1,0 +1,4 @@
+primary_blob_endpoint = "https://stiacfnddevtuy9k.blob.core.windows.net/"
+resource_group_name = "rg-iacfnd-tf-dev"
+storage_account_id = "/subscriptions/0620697c-2063-4a7d-89ef-bb7464126a5c/resourceGroups/rg-iacfnd-tf-dev/providers/Microsoft.Storage/storageAccounts/stiacfnddevtuy9k"
+storage_account_name = "stiacfnddevtuy9k"
