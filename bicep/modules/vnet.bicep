@@ -26,10 +26,14 @@ resource vnet 'Microsoft.Network/virtualNetworks@2024-05-01' = {
   name: vnetName
   location: location
   tags: tags
-  properties: {
+   properties: {
+    // Set explicitly: Azure applies this default server-side, and leaving it out
+    // makes what-if report a false "modify" on every re-run.
+    privateEndpointVNetPolicies: 'Disabled'
     addressSpace: {
       addressPrefixes: addressPrefixes
     }
+  
     // A loop: one subnet object is generated for every item in the subnets parameter.
     subnets: [for subnet in subnets: {
       name: subnet.name
