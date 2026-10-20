@@ -1,0 +1,127 @@
+{
+  "id": "/subscriptions/0620697c-2063-4a7d-89ef-bb7464126a5c/resourceGroups/rg-iacfnd-bicep-dev/providers/Microsoft.Resources/deployments/vnet-dev-01",
+  "location": null,
+  "name": "vnet-dev-01",
+  "properties": {
+    "correlationId": "cf563994-9773-4187-81c9-84c05e9985df",
+    "debugSetting": null,
+    "dependencies": [],
+    "diagnostics": null,
+    "duration": "PT9.5513329S",
+    "error": null,
+    "extensions": [],
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/0620697c-2063-4a7d-89ef-bb7464126a5c/resourceGroups/rg-iacfnd-bicep-dev/providers/Microsoft.Network/virtualNetworks/vnet-iacfnd-dev",
+        "identifiers": null,
+        "resourceGroup": "rg-iacfnd-bicep-dev",
+        "resourceType": "Microsoft.Network/virtualNetworks"
+      }
+    ],
+    "outputs": {
+      "environment": {
+        "type": "String",
+        "value": "dev"
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "addressPrefix": "10.10.1.0/24",
+            "id": "/subscriptions/0620697c-2063-4a7d-89ef-bb7464126a5c/resourceGroups/rg-iacfnd-bicep-dev/providers/Microsoft.Network/virtualNetworks/vnet-iacfnd-dev/subnets/snet-web",
+            "name": "snet-web",
+            "resourceGroup": "rg-iacfnd-bicep-dev"
+          },
+          {
+            "addressPrefix": "10.10.2.0/24",
+            "id": "/subscriptions/0620697c-2063-4a7d-89ef-bb7464126a5c/resourceGroups/rg-iacfnd-bicep-dev/providers/Microsoft.Network/virtualNetworks/vnet-iacfnd-dev/subnets/snet-app",
+            "name": "snet-app",
+            "resourceGroup": "rg-iacfnd-bicep-dev"
+          }
+        ]
+      },
+      "vnetId": {
+        "type": "String",
+        "value": "/subscriptions/0620697c-2063-4a7d-89ef-bb7464126a5c/resourceGroups/rg-iacfnd-bicep-dev/providers/Microsoft.Network/virtualNetworks/vnet-iacfnd-dev"
+      },
+      "vnetName": {
+        "type": "String",
+        "value": "vnet-iacfnd-dev"
+      }
+    },
+    "parameters": {
+      "environment": {
+        "type": "String",
+        "value": "dev"
+      },
+      "location": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "owner": {
+        "type": "String",
+        "value": "SK"
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "addressPrefix": "10.10.1.0/24",
+            "name": "snet-web"
+          },
+          {
+            "addressPrefix": "10.10.2.0/24",
+            "name": "snet-app"
+          }
+        ]
+      },
+      "vnetAddressPrefix": {
+        "type": "String",
+        "value": "10.10.0.0/16"
+      },
+      "workload": {
+        "type": "String",
+        "value": "iacfnd"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "7385215230497723974",
+    "templateLink": null,
+    "timestamp": "2026-10-20T00:20:57.498016+00:00",
+    "validatedResources": null,
+    "validationLevel": null
+  },
+  "resourceGroup": "rg-iacfnd-bicep-dev",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
